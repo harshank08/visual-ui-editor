@@ -22,7 +22,7 @@ export default function RootLayout({
             <a href="#settings">Settings</a>
           </nav>
         </header>
-        <main className="content">{children}</main>
+        <main className="content" style={{ backgroundColor: "white" }}>{children}</main>
       </body>
     </html>
   );
