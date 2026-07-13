@@ -17,7 +17,8 @@ export default function RootLayout({
         <header className="site-header">
           <h1 className="site-title">Acme Dashboard</h1>
           <nav className="site-nav">
-            <a href="#home">Home</a>
+            <a href="/">Home</a>
+            <a href="/landing">Landing</a>
             <a href="#reports">Reports</a>
             <a href="#settings">Settings</a>
           </nav>
