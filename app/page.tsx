@@ -7,7 +7,7 @@ export default function Home() {
         <p className="hero-kicker">Welcome back</p>
         <h2 className="hero-heading">Your projects at a glance</h2>
         <p className="hero-sub">Track spend, status and deadlines across every workstream.</p>
-        <button className="cta">Create new project</button>
+        <button className="cta cta--black-text">Create new project</button>
       </section>
 
       <section className="cards">
