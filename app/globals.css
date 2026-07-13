@@ -75,3 +75,107 @@ body {
 
 .card-title { margin: 0 0 6px; font-size: 18px; }
 .card-meta { margin: 0; color: var(--muted); font-size: 14px; }
+
+/* ---- Landing page ---- */
+
+.section-heading { font-size: 24px; margin: 0 0 24px; }
+
+.hero-actions { display: flex; gap: 12px; }
+
+.cta-ghost {
+  background: transparent;
+  color: var(--accent);
+  border: 1px solid var(--border);
+}
+
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 48px;
+}
+
+.feature {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.feature-glyph { font-size: 26px; display: block; margin-bottom: 12px; }
+.feature-title { margin: 0 0 6px; font-size: 17px; }
+.feature-desc { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
+
+.pricing { margin-top: 56px; }
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+.price {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.price-featured {
+  border-color: var(--accent);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.15);
+}
+
+.price-badge {
+  position: absolute;
+  top: -11px;
+  left: 24px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.price-tier { margin: 0 0 8px; font-size: 16px; color: var(--muted); }
+
+.price-amount { margin: 0 0 16px; font-size: 32px; font-weight: 700; }
+.price-cadence { font-size: 14px; font-weight: 400; color: var(--muted); margin-left: 2px; }
+
+.price-list { list-style: none; padding: 0; margin: 0 0 20px; }
+.price-item {
+  font-size: 14px;
+  color: var(--ink);
+  padding: 7px 0 7px 22px;
+  position: relative;
+  border-top: 1px solid var(--border);
+}
+.price-item::before {
+  content: "✓";
+  color: var(--accent);
+  position: absolute;
+  left: 0;
+}
+.price .cta { width: 100%; }
+
+.testimonial {
+  margin-top: 56px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 32px;
+  text-align: center;
+}
+
+.quote { margin: 0 0 14px; font-size: 20px; line-height: 1.5; }
+.quote-author { margin: 0; color: var(--muted); font-size: 14px; }
+
+.footer-cta { margin-top: 56px; text-align: center; padding-bottom: 24px; }
+
+@media (max-width: 720px) {
+  .features, .pricing-grid { grid-template-columns: 1fr; }
+}
