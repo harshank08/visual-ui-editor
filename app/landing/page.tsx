@@ -50,7 +50,7 @@ export default function Landing() {
           />
           <PricingCard
             tier="Team"
-            price="$24"
+            price="$25"
             cadence="/mo"
             features={["Unlimited projects", "Priority support", "Blast-radius warnings", "Shared presets"]}
             cta="Choose Team"
