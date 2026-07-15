@@ -46,6 +46,7 @@ body {
 }
 
 .hero-heading { font-size: 30px; margin: 0 0 10px;}
+.hero-heading--red { color: red; }
 
 .hero-sub { color: var(--muted); font-size: 16px; margin: 0 0 20px; }
 
@@ -60,6 +61,10 @@ body {
 }
 .cta--black-text {
   color: #000;
+}
+.cta--red {
+  background: red;
+  color: #fff;
 }
 
 .cards {
