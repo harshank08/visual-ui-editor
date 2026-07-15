@@ -45,12 +45,12 @@ body {
   margin: 0 0 6px;
 }
 
-.hero-heading { font-size: 30px; margin: 0 0 10px; color: red; }
+.hero-heading { font-size: 30px; margin: 0 0 10px;}
 
 .hero-sub { color: var(--muted); font-size: 16px; margin: 0 0 20px; }
 
 .cta {
-  background: red;
+  background: blue;
   color: #fff;
   border: none;
   padding: 11px 20px;
