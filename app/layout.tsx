@@ -24,10 +24,11 @@ export default function RootLayout({
           </nav>
         </header>
         <main className="content">{children}</main>
-        {/* Visual UI Editor — dev-only in-page widget (served by the companion on :5179). */}
+        {/* Coding Agent — dev-only in-page widget. Where the browser loads it from depends on the
+            environment, set via UIED_WIDGET_URL in .env (defaults to the local companion). */}
         {process.env.NODE_ENV === "development" && (
           // eslint-disable-next-line @next/next/no-sync-scripts
-          <script src="http://127.0.0.1:5179/widget.js" async />
+          <script src={process.env.UIED_WIDGET_URL ?? "http://127.0.0.1:5179/widget.js"} async />
         )}
       </body>
     </html>
