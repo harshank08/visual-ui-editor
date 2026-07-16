@@ -66,6 +66,10 @@ body {
   background: red;
   color: #fff;
 }
+.cta--blue {
+  background: blue;
+  color: #fff;
+}
 
 .cards {
   display: grid;
