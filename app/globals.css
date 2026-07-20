@@ -45,39 +45,85 @@ body {
   margin: 0 0 6px;
 }
 
-.hero-heading { font-size: 30px; margin: 0 0 10px;}
+.hero-heading {
+  font-size: 36px;
+  margin: 0 0 12px;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--ink) 0%, var(--accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
 
 .hero-sub { color: var(--muted); font-size: 16px; margin: 0 0 20px; }
 
 .cta {
-  background: blue;
+  background: var(--accent);
   color: #fff;
   border: none;
-  padding: 11px 20px;
-  border-radius: 8px;
+  padding: 12px 24px;
+  border-radius: 10px;
   font-size: 15px;
+  font-weight: 600;
   cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(99, 102, 241, 0.2);
+}
+
+.cta:hover {
+  background: #4f46e5;
+  box-shadow: 0 4px 12px rgba(99, 102, 241, 0.3);
+  transform: translateY(-1px);
 }
 .cta--black-text {
   color: #000;
 }
 
+.stats-overview {
+  margin-top: 48px;
+}
+
+.section-subheading {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 16px;
+  color: var(--ink);
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
-  margin-top: 40px;
+  gap: 20px;
 }
 
 .card {
   background: var(--card);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 20px;
+  padding: 24px;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
 }
 
-.card-title { margin: 0 0 6px; font-size: 18px; }
-.card-meta { margin: 0; color: #000000; font-size: 14px; }
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+  border-color: var(--accent);
+}
+
+.card-title {
+  margin: 0 0 8px;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.card-meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.5;
+}
 
 /* ---- Landing page ---- */
 
@@ -88,7 +134,14 @@ body {
 .cta-ghost {
   background: transparent;
   color: var(--accent);
-  border: 1px solid var(--border);
+  border: 2px solid var(--accent);
+  box-shadow: none;
+}
+
+.cta-ghost:hover {
+  background: var(--accent);
+  color: #fff;
+  border-color: var(--accent);
 }
 
 .features {
@@ -181,4 +234,7 @@ body {
 
 @media (max-width: 720px) {
   .features, .pricing-grid { grid-template-columns: 1fr; }
+  .cards { grid-template-columns: 1fr; }
+  .hero-actions { flex-direction: column; }
+  .hero-heading { font-size: 28px; }
 }
