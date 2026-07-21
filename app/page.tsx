@@ -14,6 +14,7 @@ export default function Home() {
         {/* Same component used twice → blast-radius demo when you edit StatCard.tsx */}
         <StatCard title="Project Alpha" meta="On track · due in 4 days" />
         <StatCard title="Project Beta" meta="At risk · due tomorrow" />
+        <StatCard title="Project Gamma" meta="Completed · finished on time" />
       </section>
     </>
   );
