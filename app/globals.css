@@ -82,6 +82,7 @@ body {
 /* ---- Landing page ---- */
 
 .section-heading { font-size: 24px; margin: 0 0 24px; }
+.section-heading--edited { color: #0066cc; }
 
 .hero-actions { display: flex; gap: 12px; }
 
@@ -106,7 +107,7 @@ body {
 }
 
 .feature-glyph { font-size: 26px; display: block; margin-bottom: 12px; }
-.feature-title { margin: 0 0 6px; font-size: 17px; }
+.feature-title { margin: 0 0 6px; font-size: 17px; color: red; }
 .feature-desc { margin: 0; color: var(--muted); font-size: 14px; line-height: 1.5; }
 
 .pricing { margin-top: 56px; }

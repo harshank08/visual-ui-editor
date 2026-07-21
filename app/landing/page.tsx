@@ -75,7 +75,7 @@ export default function Landing() {
       </section>
 
       <section className="footer-cta">
-        <h2 className="section-heading">Ready to edit your UI in place?</h2>
+        <h2 className="section-heading section-heading--edited">Ready to edit your UI in place?</h2>
         <p className="hero-sub">Join thousands of teams shipping faster with Acme.</p>
         <button className="cta">Create your workspace</button>
       </section>
